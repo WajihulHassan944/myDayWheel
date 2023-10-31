@@ -1,0 +1,107 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Template Name: GO Multipurpose HTML5 Bootstrap Theme >>>> 
+
+Version:1.0
+
+Author profile : http://themeforest.net/user/2AA 
+
+Primary use : Business,Bloging,Multipurpose,Corporate,creative,promotion,landing
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+
+	light-blue color version */
+
+/*---------------------------------------------------
+    LESS Elements
+  ---------------------------------------------------
+    A set of useful LESS mixins
+  
+  ---------------------------------------------------*/
+
+/* ==========================================================================
+   LESS VARIABLES LIST
+   ========================================================================== */
+
+#tweet div p strong,
+.title strong {
+    color: #0180A3;
+}
+
+.spinner>div {
+    background-color: #0180A3;
+}
+
+.flip-3D .front {
+    background: #f5f5f5;
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #eeeeee), color-stop(1, #ffffff));
+    background: -ms-linear-gradient(bottom, #eeeeee, #ffffff);
+    background: -moz-linear-gradient(center bottom, #eeeeee 0%, #ffffff 100%);
+    background: -o-linear-gradient(#ffffff, #eeeeee);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#eeeeee', GradientType=0);
+    background-color: #eeeeee;
+    background: -webkit-gradient(linear, left top, left bottom, from(#eeeeee), to(#ffffff));
+    background: -webkit-linear-gradient(top, #eeeeee, #ffffff);
+    background: -moz-linear-gradient(top, #eeeeee, #ffffff);
+    background: -ms-linear-gradient(top, #eeeeee, #ffffff);
+    background: -o-linear-gradient(top, #eeeeee, #ffffff);
+}
+
+.flip-3D .back {
+    background: #0180A3 !important;
+}
+
+.bullet {
+    border-color: #0180A3 !important;
+}
+
+#countdown::before,
+#testomnials::before,
+#buy::before {
+    background-color: rgba(1, 128, 163, 0.72);
+}
+
+#pricing .preimeum {
+    background-color: #0180A3;
+}
+
+.preimeum .upper-table {
+    background: #0180A3 !important;
+}
+
+.preimeum .inner-table h4 {
+    border-color: #0180A3 !important;
+}
+
+#pricing .preimeum .inner-table ul>li {
+    border-color: #0180A3 !important;
+}
+
+#pricing .preimeum .lower-table a {
+    background-color: #0180A3 !important;
+}
+
+#pricing .preimeum .lower-table a:hover {
+    background-color: #0180A3 !important;
+}
+
+#features .Fservices i,
+#features .Fservices h3 {
+    color: #0180A3;
+}
+
+#features .Fservices:hover {
+    background-color: #0180A3;
+}
+
+#contact .form-inline button[type="submit"] {
+    background-color: #0180A3;
+    color: #fff;
+}
+
+#contact .form-inline button[type="submit"]:hover {
+    color: #0180A3;
+    border: 1px solid #0bcf9f;
+}

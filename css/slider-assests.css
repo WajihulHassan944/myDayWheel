@@ -1,0 +1,366 @@
+/* ==========================================================================
+   LAYERS SLIDER
+   ========================================================================== */
+
+#main-slider {
+    position: absolute;
+    height: 86px;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    padding: 20px 0;
+}
+
+#main-slider .container .row p a {
+    margin-top: 20px;
+    top: 0;
+    position: absolute;
+}
+
+/*@media (min-width: 299px) and (max-width: 767px) {
+  #main-slider .container .row p a {
+    max-width: 70px;
+  }
+}*/
+
+#main-slider .container .row nav.main-form>ul {
+    float: right;
+}
+
+#main-slider .container .row nav.main-form>ul li {
+    float: left;
+    margin-right: 15px;
+}
+
+#main-slider .container .row nav.main-form>ul a {
+    color: #FFF;
+    text-transform: uppercase;
+}
+
+#main-slider .container .row nav.main-form>ul a:hover {
+    color: #f59520;
+}
+
+#main-slider .container .row nav.main-form>ul .active {
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    border-radius: 6px;
+    border: 1px solid #fff;
+    padding: 8px 12px;
+    font-weight: 800;
+}
+
+#main-slider .container .row nav.main-form1>ul {
+    float: right;
+}
+
+#main-slider .container .row nav.main-form1>ul li {
+    float: left;
+    margin-right: 15px;
+}
+
+#main-slider .container .row nav.main-form1>ul a {
+    color: #FFF;
+    text-transform: uppercase;
+}
+
+#main-slider .container .row nav.main-form1>ul a:hover {
+    color: #333;
+}
+
+#main-slider .container .row nav.main-form1>ul .active {
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    border-radius: 6px;
+    border: 1px solid #fff;
+    padding: 8px 12px;
+    font-weight: 800;
+}
+
+#main-slider .container .row nav.main-form>ul .active:hover {
+    background-color: #F59520;
+    border: 1px solid transparent;
+    color: #fff;
+}
+
+.btn-slider {
+    margin-right: 15px;
+    color: #6a6a6a;
+    font-size: 18px;
+    text-transform: capitalize;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    background-color: #FFF;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    border-radius: 40px;
+    font-family: 'Montserrat', sans-serif !important;
+    padding: 12px 38px;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+/* ==========================================================================
+   FULL SCREEN SLIDER
+   ========================================================================== */
+
+.ms-fullscreen-template .slide-1 h1:nth-child(1) {
+    color: #fff;
+    font-size: 69px;
+    font-weight: 100;
+    font-family: 'Raleway', sans-serif;
+    top: 43% !important;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.ms-fullscreen-template .slide-1 h1:nth-child(2) {
+    color: #fff;
+    font-size: 93px;
+    font-weight: 800;
+    top: 50% !important;
+    letter-spacing: -8px;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 767px) {
+    .ms-fullscreen-template .slide-1 h1:nth-child(2) {
+        letter-spacing: 0px;
+    }
+    .ms-fullscreen-template .slide-3 h1,
+    .ms-fullscreen-template .slide-3 h2 {
+        letter-spacing: 0px;
+    }
+    .ms-fullscreen-template .slide-3 h2>small {
+        font-size: 15px !important;
+    }
+    .ms-fullscreen-template .slide-3 .mybutton {
+        font-size: 11px !important;
+        padding: 5px 9px !important;
+    }
+    .ms-fullscreen-template .slide-3 div.ms-layer {
+        top: 200px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .ms-fullscreen-template .slide-3 div.ms-layer {
+        top: 170px !important;
+    }
+}
+
+@media (max-width: 320px) {
+    .ms-fullscreen-template .slide-3 div.ms-layer {
+        top: 130px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .ms-fullscreen-template .slide-2 h3>strong {
+        font-size: 15px;
+    }
+}
+
+.ms-fullscreen-template .slide-1 h1:nth-child(3) {
+    font-size: 30px;
+    font-weight: 100;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    top: 62% !important;
+    left: 24.6% !important;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.ms-fullscreen-template .slide-1 h1:nth-child(3) strong {
+    font-weight: 800;
+    font-family: 'Raleway', sans-serif;
+}
+
+@media (max-width: 767px) {
+    .ms-fullscreen-template .slide-1 h1:nth-child(3) {
+        font-weight: 200;
+    }
+}
+
+.ms-fullscreen-template .slide-1 p.text-light {
+    top: 71% !important;
+    left: 42% !important;
+}
+
+.ms-fullscreen-template .slide-1 p.text-light a.round {
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    padding: 13px 41px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-radius: 30px;
+    /* margin: auto; */
+    /* width: auto!important; */
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #FFF;
+    color: #2b2b2b;
+}
+
+@media (max-width: 479px) {
+    .ms-fullscreen-template .slide-1 p.text-light a.round {
+        font-size: 8px;
+        padding: 13px 25px;
+    }
+}
+
+.ms-fullscreen-template .slide-2 h3:nth-child(1) {
+    top: 43% !important;
+    left: 17% !important;
+    font-weight: 100;
+    color: #fff;
+    font-size: 69px;
+    padding: 20px 55px;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+}
+
+.ms-fullscreen-template .slide-2 h3:nth-child(2) {
+    top: 43% !important;
+    left: 51.7% !important;
+    font-weight: 100;
+    color: #16222b;
+    font-size: 69px;
+    padding: 20px 55px;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+}
+
+.ms-fullscreen-template .slide-3 {
+    font-family: 'Raleway', sans-serif;
+}
+
+.ms-fullscreen-template .slide-3 .box {
+    width: 49%;
+    top: 40% !important;
+    padding-bottom: 19% !important;
+    height: 23% !important;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.ms-fullscreen-template .slide-3 p:nth-child(2) {
+    font-size: 40px;
+    top: 42% !important;
+    font-weight: 100;
+    left: 4% !important;
+    color: #FFF;
+}
+
+.ms-fullscreen-template .slide-3 .big-text {
+    font-size: 93px;
+    color: #FFF;
+    font-weight: 100;
+    letter-spacing: -9.2px;
+    top: 46% !important;
+    left: 3% !important;
+}
+
+@media (max-width: 767px) {
+    .ms-fullscreen-template .slide-3 .big-text {
+        letter-spacing: 0;
+    }
+}
+
+.ms-fullscreen-template .slide-3 p:nth-child(4) {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 200;
+    text-transform: uppercase;
+    left: 4% !important;
+    top: 57% !important;
+}
+
+.ms-fullscreen-template .slide-3 p:nth-child(4) strong {
+    font-weight: 800;
+}
+
+.ms-fullscreen-template .slide-4 h4 {
+    font-weight: 100;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    font-size: 68px;
+    left: 1% !important;
+    top: 45% !important;
+    border-top: 2px solid #fff;
+}
+
+.ms-fullscreen-template .slide-4 h3 {
+    font-weight: 800;
+    color: #fff;
+    font-size: 93px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -8.2px;
+    left: 38% !important;
+    top: 43.2% !important;
+}
+
+@media (max-width: 767px) {
+    .ms-fullscreen-template .slide-4 h3 {
+        letter-spacing: 0;
+    }
+}
+
+.ms-fullscreen-template .slide-4 img.ribbon {
+    left: 1% !important;
+    top: 56% !important;
+    width: 390px;
+    height: 50px;
+}
+
+@media (max-width: 480px) {
+    .ms-skin-default .ms-nav-next,
+    .ms-skin-default .ms-nav-prev {
+        display: none;
+    }
+}
+
+.ms-skin-default .ms-slide .ms-slide-vcbtn {
+    width: 30px;
+    height: 30px;
+    bottom: -18px !important;
+    right: 0% !important;
+    margin: 18px !important;
+    top: inherit !important;
+}
+
+@media (max-width: 480px) and (orientation: landscape) {
+    .ms-fullscreen-template .slide-3 div.ms-layer {
+        top: 200px !important;
+    }
+}
+
+@media (max-width: 600px) and (orientation: landscape) {
+    .ms-fullscreen-template .slide-3 div.ms-layer {
+        top: 270px !important;
+    }
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+    .ms-fullscreen-template .slide-3 div.ms-layer {
+        top: 300px !important;
+    }
+}
+
+@media screen and (min-width: 240px) and (max-width: 319px) {
+    #mock-22 {
+        display: none;
+    }
+}

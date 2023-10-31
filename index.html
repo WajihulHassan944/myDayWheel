@@ -1,0 +1,2438 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>MY Daywheel</title>
+
+    <meta name="description" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-touch-icon-57x57.png">
+
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-touch-icon-60x60.png">
+
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-touch-icon-72x72.png">
+
+    <link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32">
+
+    <link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16">
+
+    <link rel="manifest" href="images/favicon/manifest.json">
+
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+
+    <meta name="apple-mobile-web-app-title" content="Day wheel">
+
+    <meta name="application-name" content="Day wheel">
+
+    <meta name="msapplication-TileColor" content="#da532c">
+
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- <link rel="shortcut icon" href=""> -->
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/slider-assests.css">
+
+    <link rel="stylesheet" href="css/dark-green.css">
+
+    <link rel="stylesheet" href="css/font-awesome.css">
+
+    <link rel="stylesheet" href="css/toaster.css">
+
+
+
+    <!-- Base MasterSlider style sheet -->
+
+    <link rel="stylesheet" href="slider/style/masterslider.css" />
+
+    <link rel="stylesheet" href="slider/style/ms-layers-style.css" />
+
+
+
+    <!-- MasterSlider default skin -->
+
+    <link href="slider/skins/default/style.css" rel='stylesheet' type='text/css'>
+
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+    <!--[if lt IE 9]>
+
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+
+			<script src="https://oss.maxcdn.com/libs/respond.../../js/1.4.2/respond.min.js"></script>
+
+		<![endif]-->
+
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+
+
+        ga('create', 'UA-79748506-1', 'auto');
+
+        ga('send', 'pageview');
+    </script>
+
+</head>
+
+<body>
+
+
+
+    <!-- LOADING BEGIN -->
+
+
+
+    <div id="loader-wrapper">
+
+        <div class="spinner">
+
+            <div class="bounce1"></div>
+
+            <div class="bounce2"></div>
+
+            <div class="bounce3"></div>
+
+        </div>
+
+    </div>
+
+
+
+    <div id="page-wrapper">
+
+        <article id="main-slider">
+
+            <div class="background main-bg"></div>
+
+            <div class="container">
+
+                <div class="row">
+
+                    <p><a href="http://mydaywheel.com/"><img src="img/logo.png" class="img-responsive" alt="My Day Wheel"></a></p>
+
+                    <nav class="main-form">
+
+                        <ul>
+
+                            <li class="login-form"><a href="javascript:void(0)" class="cd-signup op">Sign up</a></li>
+
+                            <li class="login-form"><a href="javascript:void(0)" class="cd-signin op active">Sign in</a></li>
+
+                        </ul>
+
+                    </nav>
+
+                    <nav class="main-form1">
+
+                        <ul>
+
+                            <li class="btn-group">
+
+                                <button type="button" class="btn btn-primary daywheel-page-link">
+
+                                            <i class="fa fa-clock-o"></i></button>
+
+                                <button type="button" class="btn btn-primary" data-toggle="dropdown">
+
+                                            <i class="fa fa-user"></i> <span class="hidden-xs user"></span></button>
+
+                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+
+                                            <span class="caret"></span><span class="sr-only"> </span>
+
+                                        </button>
+
+                                <ul class="dropdown-menu" role="menu">
+
+                                    <li><a href="javascript:void(0)"><i class="fa fa-user"></i> <span class="user"></span></a></li>
+
+                                    <li><a href="javascript:void(0)" id="logout"><i class="fa fa-power-off"></i> Logout</a></li>
+
+                                </ul>
+
+                            </li>
+
+                        </ul>
+
+                    </nav>
+
+                </div>
+
+                <div class="row">
+
+                    <div id="cd-nav">
+
+
+
+                        <a href="javascript:void(0)" class="cd-nav-trigger">Menu<span></span></a>
+
+
+
+                        <nav id="cd-main-nav">
+
+                            <ul>
+
+                                <li><a class="menu-item menu-item-active" href="#main-slider">
+
+                                                <i class="fa fa-home"></i>
+
+                                                <em>Home</em>
+
+                                                <i class="fa fa-circle"></i>
+
+                                            </a></li>
+
+                                <li><a class="menu-item" href="#About">
+
+                                                <i class="fa fa-building"></i>
+
+                                                <em>About</em>
+
+                                                <i class="fa fa-circle"></i>
+
+                                            </a></li>
+
+                                <li><a class="menu-item" href="#services">
+
+                                                <i class="fa fa-cogs"></i>
+
+                                                <em>Services</em>
+
+                                                <i class="fa fa-circle"></i>
+
+                                            </a></li>
+                                <li><a class="menu-item" href="#team">
+
+                                                <i class="fa fa-users"></i>
+
+                                                <em>Team</em>
+
+                                                <i class="fa fa-circle"></i>
+
+                                            </a></li>
+                                <li><a class="menu-item" href="#features">
+
+                                                <i class="fa fa-star"></i>
+
+                                                <em>Features</em>
+
+                                                <i class="fa fa-circle"></i>
+
+                                            </a></li>
+                                <li><a class="menu-item" href="#testomnials">
+
+                                                <i class="fa fa-thumbs-up"></i>
+
+                                                <em>Testimonials</em>
+
+                                                <i class="fa fa-circle"></i>
+
+                                            </a></li>
+                                <li><a class="menu-item" href="#logos">
+
+                                                <i class="fa fa-briefcase"></i>
+
+                                                <em>Clients</em>
+
+                                                <i class="fa fa-circle"></i>
+
+                                            </a></li>
+                                <li><a class="menu-item" href="#contact">
+
+                                                <i class="fa fa-envelope"></i>
+
+                                                <em>Contact</em>
+
+                                                <i class="fa fa-circle"></i>
+
+                                            </a></li>
+
+                                <li><a class="menu-item" href="visionmision.php">
+
+                                                <i class="fa fa-eye"></i>
+
+                                                <em>Vision and Mission</em>
+
+                                                <i class="fa fa-circle"></i>
+
+                                            </a></li>
+
+                                <li id="menu-daywheel"><a class="menu-item" href="dashboard.php">
+
+                                                <i class="fa fa-dashboard"></i>
+
+                                                <em>MY Day Wheel</em>
+
+                                                <i class="fa fa-circle"></i>
+
+                                            </a></li>
+
+                            </ul>
+
+                        </nav>
+
+                    </div>
+
+                </div>
+
+                <!-- FORM MODAL -->
+
+                <div class="cd-user-modal1 cd-user-modal">
+                    <!-- this is the entire modal form, including the background -->
+
+                    <div class="cd-user-modal-container">
+                        <!-- this is the container wrapper -->
+
+                        <ul class="cd-switcher">
+
+                            <li><a href="javascript:void(0)">Sign in</a></li>
+
+                            <li><a href="javascript:void(0)">Sign up</a></li>
+
+                        </ul>
+
+
+
+                        <div id="cd-login">
+                            <!-- log in form -->
+
+                            <form class="cd-form">
+
+                                <p class="fieldset">
+
+                                    <label class="image-replace cd-email" for="signin-email">E-mail</label>
+
+                                    <input class="full-width has-padding has-border" id="username" type="email" placeholder="E-mail">
+
+                                    <span class="cd-error-message">Error message here!</span>
+
+                                </p>
+
+                                <p class="fieldset">
+
+                                    <label class="image-replace cd-password" for="signin-password">Password</label>
+
+                                    <input class="full-width has-padding has-border" id="lpassword" type="password" placeholder="Password">
+
+                                    <span class="cd-error-message">Error message here!</span>
+
+                                </p>
+
+
+
+                                <p class="fieldset">
+
+                                    <input type="checkbox" id="remember-me" checked>
+
+                                    <label for="remember-me">Remember me</label>
+
+                                </p>
+
+
+
+                                <p class="fieldset">
+
+                                    <a href="javascript:void(0)" class="full-width my-btn button" id="login">Login</a>
+
+                                </p>
+
+                            </form>
+
+
+
+                            <p class="cd-form-bottom-message"><a href="javascript:void(0)">Forgot your password?</a></p>
+
+                            <a href="javascript:void(0)" class="cd-close-form">Close</a>
+
+                        </div>
+                        <!-- cd-login -->
+
+
+
+                        <div id="cd-signup">
+                            <!-- sign up form -->
+
+                            <form class="cd-form">
+
+                                <!--<p class="fieldset">
+
+                                            <label class="image-replace cd-username" for="signup-username">Username</label>
+
+                                            <input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Username">
+
+                                            <span class="cd-error-message">Ya message here!</span>
+
+                                        </p>-->
+
+
+
+                                <p class="fieldset">
+
+                                    <label class="image-replace cd-email" for="email">E-mail</label>
+
+                                    <input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail">
+
+                                    <span class="cd-error-message">Error Email here!</span>
+
+                                </p>
+
+
+
+                                <p class="fieldset">
+
+                                    <label class="image-replace cd-password" for="password">Password</label>
+
+                                    <input class="full-width has-padding has-border" id="password" type="password" placeholder="Password">
+
+                                    <span class="cd-error-message">Error message here!</span>
+
+                                </p>
+
+
+
+                                <p class="fieldset">
+
+                                    <label class="image-replace cd-username" for="firstname">First Name</label>
+
+                                    <input class="full-width has-padding has-border" id="firstname" type="text" placeholder="First Name">
+
+                                    <span class="cd-error-message">Error message here!</span>
+
+                                </p>
+
+
+
+                                <p class="fieldset">
+
+                                    <label class="image-replace cd-username" for="lastname">Last Name</label>
+
+                                    <input class="full-width has-padding has-border" id="lastname" type="text" placeholder="Last Name">
+
+                                    <span class="cd-error-message">Error message here!</span>
+
+                                </p>
+
+
+
+                                <p class="fieldset">
+
+                                    <label class="image-replace cd-zip" for="zipcode">Zip Code</label>
+
+                                    <input class="full-width has-padding has-border" id="zipcode" type="text" placeholder="Zip Code (Optional)">
+
+                                    <span class="cd-error-message">Error message here!</span>
+
+                                </p>
+
+
+
+                                <p class="fieldset gender-input">
+
+                                    <label class="radio-inline">
+
+                                                <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Male" class="radiobox" checked="checked"> Male
+
+                                            </label>
+
+                                    <label class="radio-inline">
+
+                                                <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Female" class="radiobox"> Female <span>(Optional)</span>
+
+                                            </label>
+
+                                </p>
+
+
+
+                                <p class="fieldset">
+
+                                    <!--<label class="image-replace cd-password" for="age">Age Range</label>-->
+
+                                    <select id="Age" class="form-control">
+
+                                                <option value="">-- select age range --</option>
+
+                                                <option value="<35">&lt; 35</option>
+
+                                                <option value=">35 and <50">&gt;35 and &lt;50</option>
+
+                                                <option value=">50">&gt; 50</option>
+
+                                            </select>
+
+                                    <span class="cd-error-message">Error message here!</span>
+
+                                </p>
+
+
+
+                                <p class="fieldset">
+
+                                    <!--<label class="image-replace cd-password" for="country">Country</label>-->
+                                    <select id="Country" class="form-control">
+
+                                                <option value="">-- select country --</option>
+
+                                            </select>
+
+                                    <span class="cd-error-message">Error message here!</span>
+
+                                </p>
+
+
+
+                                <p class="fieldset">
+
+                                    <input type="checkbox" id="accept-terms">
+
+                                    <label for="accept-terms">I agree to the Terms</label>
+
+                                </p>
+
+
+
+                                <p class="fieldset">
+
+                                    <a href="javascript:void(0)" class="full-width has-padding my-btn button" id="signup">Create account</a>
+
+                                </p>
+
+                            </form>
+
+
+
+                            <a href="javascript:void(0)" class="cd-close-form">Close</a>
+
+                        </div>
+                        <!-- cd-signup -->
+
+
+
+                        <div id="cd-reset-password">
+                            <!-- reset password form -->
+
+                            <p class="cd-form-message">Lost your password? Please enter your email address. You will receive a link to create a new password.</p>
+
+
+
+                            <form class="cd-form">
+
+                                <p class="fieldset">
+
+                                    <label class="image-replace cd-email" for="forgot-email">E-mail</label>
+
+                                    <input class="full-width has-padding has-border" id="forgot-email" type="email" placeholder="E-mail">
+
+                                    <span class="cd-error-message">Error message here!</span>
+
+                                </p>
+
+
+
+                                <p class="fieldset">
+
+                                    <a href="javascript:void(0)" class="my-btn button" id="forgotPass">Reset password</a>
+
+                                </p>
+
+                            </form>
+
+
+
+                            <p class="cd-form-bottom-message"><a href="javascript:void(0)">Back to log-in</a></p>
+
+                        </div>
+                        <!-- cd-reset-password -->
+
+                        <a href="javascript:void(0)" class="cd-close-form">Close</a>
+
+                    </div>
+                    <!-- cd-user-modal-container -->
+
+                </div>
+                <!-- cd-user-modal -->
+
+
+
+                <!-- FORM MODAL END -->
+
+
+
+                <!-- Alert MODAL -->
+
+                <div id="alertModal" class="cd-user-modal">
+                    <!-- this is the entire modal form, including the background -->
+
+                    <div class="cd-user-modal-container">
+                        <!-- this is the container wrapper -->
+
+                        <div class="modal-header">
+
+                            <!--<h4 class="modal-title text-center" id="label">Email Sent</h4>-->
+
+                        </div>
+
+                        <div class="modal-body">
+
+                            <div class="heading-style-3 bg-4">
+
+                                <h4 class="heading-title">Congratulation your account has been registered !</h4>
+
+                                <!--<em class="heading-subtitle">Please check your registered e-mail<br>-->
+
+                                <!--    to verify your account.</em>-->
+
+                                <em class="heading-subtitle tm">Technical Support Day Wheel™!</em>
+
+
+
+                                <div class="overlay bg-black"></div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="modal-footer">
+
+                            <a href="javascript:void(0)" class="my-btn button" id="ok">OK</a>
+
+                        </div>
+
+                        <!-- <a href="javascript:void(0)" class="cd-close-form" data-original-title="" title="">Close</a>-->
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Alert MODAL -->
+
+                <div id="ResetModal" class="cd-user-modal">
+                    <!-- this is the entire modal form, including the background -->
+
+                    <div class="cd-user-modal-container">
+                        <!-- this is the container wrapper -->
+
+                        <div class="modal-header">
+
+                            <h4 class="modal-title text-center" id="label">Email Sent</h4>
+
+                        </div>
+
+                        <div class="modal-body">
+
+                            <div class="heading-style-3 bg-4">
+
+                                <h4 class="heading-title">Congratulation !</h4>
+
+                                <em class="heading-subtitle">Please check your registered e-mail<br>
+
+                                            to get your password reset details.</em>
+
+                                <em class="heading-subtitle tm">Technical Support Day Wheel™!</em>
+
+
+
+                                <div class="overlay bg-black"></div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="modal-footer">
+
+                            <a href="javascript:void(0)" class="my-btn button" id="ResetModal-ok">OK</a>
+
+                        </div>
+
+                        <!-- <a href="javascript:void(0)" class="cd-close-form" data-original-title="" title="">Close</a>-->
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+        </article>
+
+        <div class="ms-fullscreen-template">
+
+            <!-- masterslider -->
+
+            <div class="master-slider ms-skin-default" id="masterslider">
+
+                <div class="ms-slide slide-1" style="z-index: 10">
+
+                    <img src="img/blank.gif" data-src="img/layer-bg-1.jpg" alt="lorem ipsum dolor sit" />
+
+                    <img src="img/blank.gif" data-src="img/time.png" alt="layer" class="ms-layer" style="top:270px; left:-20px; width:270px;" data-effect="left(40)" data-type="image" data-duration="450" />
+
+                    <h3 class="ms-layer" style="right: 0; left: 422px; top:304px; font-size: 50px; font-weight: 100; color: #ffffff; text-transform:uppercase; font-family:'Raleway', sans-serif ; " data-effect="front(500)" data-type="text" data-delay="500" data-ease="easeOutExpo"
+                        data-duration="420">Analyze Today to Improve</h3>
+
+
+
+                    <h3 class="ms-layer" style="right: 0; left: 428px; top:370px; font-size: 70px; font-weight: 500; color: rgb(245, 149, 32); text-transform:uppercase; font-family:'Montserrat', sans-serif;" data-effect="front(500)" data-type="text" data-delay="1000" data-ease="easeOutExpo"
+                        data-duration="420"><strong style="font-weight: 800;">Tomorrow</strong></h3>
+
+
+
+                    <h4 class="ms-layer" style="right: 0; left: 428px; top:460px; font-size: 27px; font-weight: 300; color: #ffffff; text-transform:uppercase; font-family:'Raleway', sans-serif;" data-effect="right(750)" data-type="text" data-delay="1500" data-duration="550"
+                        data-ease="easeOutExpo">With help of DayWheel™!</h4>
+
+
+
+                    <!--  <p class="ms-layer"
+
+									style="right: 0; left: 428px; top:589px; line-height: 25px; font-size: 20px; font-weight: 400; color: #222222; text-transform:capitalize; font-family:'Raleway', sans-serif;"
+
+									data-effect="left(750)"
+
+									data-type="text" 
+
+									data-delay="2000"
+
+									data-duration="550"  
+
+									data-ease="easeOutExpo"
+
+					                >Nam accumsan congue elit ac placerat. Aenean consequat lectus semper purus sagittis tempor. </p>-->
+
+
+
+                </div>
+
+                <div class="ms-slide slide-2" style="z-index: 11">
+
+                    <img src="img/blank.gif" data-src="img/layer-bg-2.jpg" alt="lorem ipsum dolor sit" />
+
+                    <img src="img/blank.gif" data-src="img/men.png" alt="layer" class="ms-layer" style="bottom:0; right:0; width:363px;" data-effect="right(40)" data-type="image" data-duration="450" />
+
+
+
+                    <h6 class="ms-layer" style="right: 0; left: 62px; top:294px; font-size: 55px; font-weight: 100; color: #fff; font-family:'Raleway', sans-serif;" data-effect="front(1300)" data-type="text" data-hide-effect="fade" data-delay="500" data-ease="easeOutQuart"
+                        data-duration="450">More than a Life Planner,</h6>
+
+
+
+                    <h3 class="ms-layer" style="right: 0; left: 62px; top:359px; font-size: 60px; font-weight:400; color: #fff; text-transform:capitalize; font-family:'Montserrat', sans-serif;" data-effect="front(1300)" data-type="text" data-hide-effect="fade" data-delay="1000"
+                        data-ease="easeOutQuart" data-duration="450">The DayWheel™ <strong style="color:#f2c061; font-weight: 600; text-transform: uppercase;">improves </strong></h3>
+
+
+
+                    <p class="ms-layer" style="right: 0; left: 62px; top:465px; font-size: 28px; font-weight: 300; color: #fff; text-transform:uppercase; font-family:'Raleway', sans-serif;" data-effect="front(1300)" data-type="text" data-hide-effect="fade" data-delay="1500"
+                        data-duration="450" data-ease="easeOutQuart">your <strong style="font-weight: 800;color:#f2c061;">Productivity</strong> and <strong style="font-weight: 800;color:#f2c061;">Efficiency</strong></p>
+
+
+
+                    <p class="ms-layer" style="right: 0; left: 62px; top:505px; font-size: 25px; font-weight: 300; color: #fff; text-transform:uppercase; font-family:'Raleway', sans-serif;" data-effect="front(1300)" data-type="text" data-hide-effect="fade" data-delay="2000"
+                        data-duration="450" data-ease="easeOutQuart">by recording every 86,400 <strong style="font-weight: 800;">seconds of your day.</strong></p>
+
+
+
+                </div>
+
+                <div class="ms-slide slide-3 android" style="z-index: 12">
+
+                    <img src="img/blank.gif" data-src="img/layer-bg-3.jpg" alt="lorem ipsum dolor sit" />
+
+                    <img src="img/blank.gif" data-src="img/hand-with-mobiel.png" alt="layer" class="ms-layer" style="bottom:0; left:-20px; width:320px;" data-effect="bottom(40)" data-type="image" data-duration="450" data-ease="easeOutQuart" />
+
+
+
+                    <h3 class="ms-layer" style="right: 0; left: 478px; top:290px; font-size: 28px; font-weight:800; color: rgb(245, 149, 32);font-family:'Montserrat', sans-serif;" data-effect="front(1300)" data-hide-effect="fade" data-type="text" data-delay="500" data-ease="easeOutQuart"
+                        data-duration="450">SPRING SUMMER 2016</h3>
+
+
+
+                    <h2 class="ms-layer" style="right: 0; left: 478px; top:340px; font-size: 56px; font-weight:900; color: #fff; font-family:'Raleway', sans-serif; text-transform: uppercase;" data-effect="front(1300)" data-hide-effect="fade" data-type="text" data-delay="1000"
+                        data-ease="easeOutQuart" data-duration="450">Get <small style="font-weight: 100; font-size: 41px; color: #fff;" data-type="text">Daywheel</small></h2>
+
+
+
+                    <h1 class="ms-layer" style="right: 0; left: 478px; top:420px; font-size: 72px; font-weight:900; color: #fff; font-family:'Montserrat', sans-serif; text-transform: uppercase; line-height: 65px; width: 50%;" data-effect="front(1300)" data-hide-effect="fade"
+                        data-type="text" data-delay="1400" data-ease="easeOutQuart" data-duration="450"> <strong style="color:#ffe090;">Android</strong> App</h1>
+
+
+
+                    <div class="ms-layer" style="right: 0; left: 478px; top:500px; font-size: 23px; font-weight:300; color: #fff; font-family:'Raleway', sans-serif; text-transform: uppercase; line-height: 65px; width: 50%; " data-effect="left(1300)" data-hide-effect="fade"
+                        data-type="text" data-delay="1900" data-ease="easeOutQuart" data-duration="450"><a target="_blank" href="https://play.google.com/store/apps/details?id=com.phonegap.daywheel&hl=en
+" class="mybutton">Playstore</a></div>
+
+
+
+                </div>
+
+                <div class="ms-slide slide-3 ios" style="z-index: 12">
+
+                    <img src="img/blank.gif" data-src="img/layer-bg-3.jpg" alt="lorem ipsum dolor sit" />
+
+                    <img src="img/blank.gif" data-src="img/ios.png" alt="layer" class="ms-layer" style="bottom:0; right:0; width:380px;" data-effect="right(40)" data-type="image" data-duration="450" data-ease="easeOutQuart" />
+
+
+
+                    <h3 class="ms-layer" style="right: 0; left: 100px; top:294px; font-size: 28px; font-weight:800; color: rgb(245, 149, 32);font-family:'Montserrat', sans-serif;" data-effect="front(1300)" data-hide-effect="fade" data-type="text" data-delay="500" data-ease="easeOutQuart"
+                        data-duration="450">SPRING SUMMER 2016</h3>
+
+
+
+                    <h2 class="ms-layer" style="right: 0; left: 100px; top:340px; font-size: 56px; font-weight:900; color: #fff; font-family:'Raleway', sans-serif; text-transform: uppercase;" data-effect="front(1300)" data-hide-effect="fade" data-type="text" data-delay="1000"
+                        data-ease="easeOutQuart" data-duration="450">Get <small style="font-weight: 100; font-size: 41px; color: #fff;" data-type="text">Daywheel</small></h2>
+
+
+
+                    <h1 class="ms-layer" style="right: 0; left: 100px; top:420px; font-size: 72px; font-weight:900; color: #fff; font-family:'Montserrat', sans-serif; text-transform: uppercase; line-height: 65px; width: 50%;" data-effect="front(1300)" data-hide-effect="fade"
+                        data-type="text" data-delay="1400" data-ease="easeOutQuart" data-duration="450"> <strong style="color:#ffe090; text-transform: none;">iOS</strong> App</h1>
+
+
+
+                    <div class="ms-layer" style="right: 0; left: 100px; top:500px; font-size: 23px; font-weight:300; color: #fff; font-family:'Raleway', sans-serif; text-transform: uppercase; line-height: 65px; width: 50%; " data-effect="left(1300)" data-hide-effect="fade"
+                        data-type="text" data-delay="1900" data-ease="easeOutQuart" data-duration="450"><a href="#" class="mybutton">App Store</a></div>
+
+
+
+                </div>
+
+
+
+                <div class="ms-slide slide-4" style="z-index: 13">
+
+                    <img src="img/blank.gif" data-src="img/layer-bg-4.jpg" alt="lorem ipsum dolor sit" />
+
+                    <img src="img/blank.gif" data-src="img/iso-1.png" alt="layer" class="ms-layer" style="top:160px; left:428px; width:317px; height:642px;" data-effect="top(40)" data-type="image" data-duration="450" data-ease="easeOutQuart" />
+
+
+
+                    <img src="img/blank.gif" data-src="img/iso-4.png" alt="layer" class="ms-layer" style="top:210px; z-index:-1; left:190px; width:305px; height:548px;" data-effect="top(40)" data-type="image" data-duration="450" data-ease="easeOutQuart" data-delay="750"
+                    />
+
+
+
+                    <img src="img/blank.gif" data-src="img/iso-2.png" alt="layer" class="ms-layer" style="top:210px; right:195px; z-index: -1; width:302px; height:547px;" data-effect="top(40)" data-type="image" data-duration="450" data-ease="easeOutQuart" data-delay="1050"
+                    />
+
+
+
+                    <img src="img/blank.gif" data-src="img/iso-5.png" alt="layer" class="ms-layer" style="bottom:0; left:4px; top: 240px; z-index:-2; width:306px; height:488px;" data-effect="top(40)" data-type="image" data-duration="450" data-ease="easeOutQuart" data-delay="1350"
+                    />
+
+
+
+                    <img src="img/blank.gif" data-src="img/iso-3.png" alt="layer" class="ms-layer" style="bottom:0; right: 30px; top: 240px; z-index:-2;  width:309px; height:487px;" data-effect="top(40)" data-type="image" data-duration="450" data-ease="easeOutQuart" data-delay="1700"
+                    />
+
+
+
+                    <h1 class="ms-layer" style="right: 0; left: 478px; top:787px; font-size: 52px; font-weight:200; color: #fff; font-family:'Raleway', sans-serif ; width: 46%;" data-effect="bottom(1300)" data-hide-effect="fade" data-type="text" data-delay="1900" data-ease="easeOutQuart"
+                        data-duration="450">apps and<strong style="color:#320d2f; font-weight: 900 ; letter-spacing: -7px; font-size: 72px; font-family: Montserrat', sans-serif;">WEBSITES</strong> <span style="float: right;"><small style="text-transform: uppercase; font-weight: 100; font-size: 31px; color: #fff;">for</small><strong style="font-size: 31px; font-weight: 600; text-transform: uppercase; color: #fff;">you</strong></span>                        </h1>
+
+
+
+                </div>
+
+                <!--<div class="ms-slide slide-5" style="z-index: 15">
+
+					            <img src="img/blank.gif" data-src="img/layer-bg-5.jpg" alt="lorem ipsum dolor sit"/> <a href="video/ocean.mp4" data-type="video">REDBULL</a>
+
+								
+
+					            <img src="img/blank.gif" data-src="img/rect.png" alt="layer" class="ms-layer"style="top:550px; left:428px; width: 315px; height: 111px;"
+
+					                data-effect="rotatetop(40,50,c)"
+
+					                data-type="image"
+
+					                data-duration="400"
+
+					                data-ease="easeOutQuart"
+
+					            />
+
+					            <a href="video/ocean.mp4" data-type="video">REDBULL</a>
+
+
+
+        					</div>-->
+                <!-- new slide -->
+                <!-- <div class="ms-slide slide-5" data-fill-mode="fit" data-delay="5">
+
+
+                                <img src="img/blank.gif" data-src="img/rect.png" alt="lorem ipsum dolor sit"/>
+
+
+                                <video data-autopause="false" data-mute="true" data-loop="true" data-fill-mode="fill">
+                                    <source id="mp4" src="video/ocean.mp4" type="video/mp4"/>
+                                    <source id="ogv" src="video/ocean.ogv" type="video/ogg"/>
+                                </video>
+
+                            </div> -->
+                <!-- end of slide -->
+
+
+
+            </div>
+
+            <!-- end of masterslider -->
+
+        </div>
+
+
+
+
+
+        <article id="About" class="Section">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="title wow fadeInDown" data-wow-delay="0">Welcome to the DayWheel™!</div>
+
+                    <div class="title wow fadeInDown" data-wow-delay="100ms"><strong>See what a difference a DayWheel™ makes!</strong></div>
+
+
+
+                </div>
+
+            </div>
+
+
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-sm-7">
+
+                        <div class="about-left">
+
+                            <div class="wow fadeInLeft" data-wow-delay="150ms" data-wow-duration="500ms">
+
+                                <!--<img src="img/ipad.png" id="mock-11" alt="ipad" width="636" height="441" > <img src="img/Iphone.png" id="mock-22" alt="iphone" width="217" height="382">-->
+
+                                <img src="img/about.jpg" alt="About Us">
+
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-5">
+
+                        <div class="about-right wow fadeInRight" data-wow-delay="350ms" data-wow-duration="500ms">
+
+                            <h2>About Us</h2>
+
+                            <p class="wow fadeInUp paragraph" data-wow-delay="200ms">DAYWHEEL is a process improvement consulting firm with over 20 collective years of experience in technology strategy, technology execution, process improvement and human capital mobilization. Our firm utilizes a unique process
+                                mapping working session (Vision Mapping) to quickly identify key areas impacting task execution times, resource allocations/constraints, financial constraints and process gaps. Compass’ “Vision Mapping” is able to extract
+                                a large amount of information and point of views from leadership and management’s participation in an amazingly short period of time.</p>
+
+                            <div class="btns-about">
+
+                                <a class="btn btn-blue" href="about.php">Read more</a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+
+
+
+
+        <!-- /**************************** END About US Section \*****************************  -->
+
+        <!-- /**************************** Store Section \*****************************  -->
+
+        <article id="parallax-1" class="store Section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-7">
+                        <div class="upper-section wow flipInX animated" data-wow-delay="150ms" data-wow-duration="900ms" style="visibility: visible; animation-duration: 900ms; animation-delay: 150ms; animation-name: flipInX;">
+                            <h3>Get 24 hours Life Tracker Tool</h3>
+                            <ul class="my-lists">
+                                <li>DayWheelTM, is a tool that will enable you to keep a visual electronic diary of your life. The DayWheelTM is the best online life assessment tool that helps you look at your life from different perspectives.</li>
+                                <li>More than a Life Planner, the DayWheel™ improves your productivity and efficiency by recording every 86,400 seconds of your day.</li>
+                                <li>The DayWheel™ is designed to help you capture the most important moments of your day and analyze the choices, decisions and situations of your life.</li>
+                            </ul>
+                            <h4>Get Our App and see what a difference a DayWheelTM makes.</h4>
+                            <div class="store-btns">
+                                <!-- apple store button -->
+                                <a class="btn btn-primary big-btn" href="#">
+                                        <i class="fa fa-apple pull-left"></i><div class="btn-text"><small>Available on the</small><br><strong>App Store</strong></div></a>
+                                <!-- android button -->
+                                <a class="btn btn-success big-btn android-btn" target="_blank" href="https://play.google.com/store/apps/details?id=com.phonegap.daywheel&hl=en">
+                                        <img class="pull-left img-responsive" src="img/google_play_04.png"><div class="btn-text"><small>Available on</small><br><strong>Google Play</strong></div></a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="about-left">
+                            <div class="wow fadeInLeft" data-wow-delay="150ms" data-wow-duration="500ms">
+                                <!--<img src="img/ipad.png" id="mock-11" alt="ipad" width="636" height="441" > <img src="img/Iphone.png" id="mock-22" alt="iphone" width="217" height="382">-->
+                                <div class="store-div">
+                                    <img src="img/store.png" class="stor-img img-responsive" alt="App Store And Play store">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- /**************************** END Store Section \*****************************  -->
+
+
+
+
+
+
+        <!-- /**************************** SERVICES  Section \*****************************  -->
+
+        <article id="services" class="Section">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="title wow fadeInDown" data-wow-delay="0">Proposed Service <strong>Amazing Services</strong></div>
+
+                    <p class="wow fadeInDown paragraph" data-wow-delay="200ms">The KingStreets Management Group (KSMG) is an alliance of management consulting companies owned individually but managed collectively by a team of professionals {DayWheel, LLC; ANSUN Management, LLC; The Lester Wright Group, LLC}.
+                        KSMG specializes in personal, community, life and business development programs, curriculums, services and solutions. KSMG demonstrates its unique and innovative ability to significantly enhance decision-making, perspective and
+                        critical thinking skills through its programs and services that elevate individuals, businesses, organizations and government entities to their desired heights.</p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-sm-4 wow flipInX" data-wow-delay="0" data-wow-duration="950ms">
+
+                        <div class="flip-3D">
+
+                            <div class="front">
+
+                                <div class="data-content">
+
+                                    <span><i class="icon-website"></i></span>
+
+                                    <h3>Vision Quest (Life Mapping)</h3>
+
+                                </div>
+
+                            </div>
+
+                            <div class="back">
+
+                                <div class="data-back">
+
+                                    <span><i class="icon-website"></i></span>
+
+                                    <h3>Vision Quest (Life Mapping)</h3>
+
+                                    <p>DayWheel’s signature workshop series that explores the details and inner workings of personal and individual development
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="col-sm-4 wow flipInX" data-wow-delay="200ms" data-wow-duration="950ms">
+
+                        <div class="flip-3D">
+
+                            <div class="front">
+
+                                <div class="data-content">
+
+                                    <span><i class="fa fa-pencil-square-o"></i></span>
+
+                                    <h3>Visual Writing</h3>
+
+                                </div>
+
+                            </div>
+
+                            <div class="back">
+
+                                <div class="data-back">
+
+                                    <span><i class="fa fa-pencil-square-o"></i></span>
+
+                                    <h3>Visual Writing</h3>
+
+                                    <p>An innovative strategy capturing process and methodology, guaranteed to improve efficiency, productivity, team building and continuity</p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="col-sm-4 wow flipInX" data-wow-delay="400ms" data-wow-duration="950ms">
+
+                        <div class="flip-3D">
+
+                            <div class="front">
+
+                                <div class="data-content">
+
+                                    <span><i class="fa fa-flag"></i></span>
+
+                                    <h3>Coaching</h3>
+
+                                </div>
+
+                            </div>
+
+                            <div class="back">
+
+                                <div class="data-back">
+
+                                    <span><i class="fa fa-flag"></i></span>
+
+                                    <h3>Coaching</h3>
+
+                                    <ul>
+
+                                        <li>Business Coaching</li>
+
+                                        <li>Life Coaching</li>
+
+                                        <li>Executive Coaching</li>
+
+                                        <li>Staff Coaching</li>
+
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-sm-4 wow flipInX" data-wow-delay="0" data-wow-duration="950ms">
+
+                        <div class="flip-3D">
+
+                            <div class="front">
+
+                                <div class="data-content">
+
+                                    <span><i class="fa fa-graduation-cap"></i></span>
+
+                                    <h3>Training</h3>
+
+                                </div>
+
+                            </div>
+
+                            <div class="back">
+
+                                <div class="data-back">
+
+                                    <span><i class="fa fa-graduation-cap"></i></span>
+
+                                    <h3>Training</h3>
+
+                                    <ul>
+
+                                        <li>Versatile Training Group
+
+                                            <li>Staff Training
+
+                                                <li> Customer Support
+
+                                                    <li> Product/Service Training
+
+                                                        <li>Financial Literacy
+
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="col-sm-4 wow flipInX" data-wow-delay="200ms" data-wow-duration="950ms">
+
+                        <div class="flip-3D">
+
+                            <div class="front">
+
+                                <div class="data-content">
+
+                                    <span><i class="fa fa-star"></i></span>
+
+                                    <h3>Consulting</h3>
+
+                                </div>
+
+                            </div>
+
+                            <div class="back">
+
+                                <div class="data-back">
+
+                                    <span><i class="fa fa-star"></i></span>
+
+                                    <h3>Consulting</h3>
+
+                                    <ul>
+
+                                        <li>Thorough Strategic Planning</li>
+
+                                        <li>Market/Industry Trends And Analysis</li>
+
+                                        <li>Alliances/Partnerships</li>
+
+                                    </ul>
+
+
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="col-sm-4 wow flipInX" data-wow-delay="400ms" data-wow-duration="950ms">
+
+                        <div class="flip-3D">
+
+                            <div class="front">
+
+                                <div class="data-content">
+
+                                    <span><i class="fa fa-life-ring"></i></span>
+
+                                    <h3>Management</h3>
+
+                                </div>
+
+                            </div>
+
+                            <div class="back">
+
+                                <div class="data-back">
+
+                                    <span><i class="fa fa-life-ring"></i></span>
+
+                                    <h3>Management</h3>
+
+                                    <ul>
+
+                                        <li>Operations Management And Support</li>
+
+                                        <li>Product/Service Support And Management</li>
+
+                                        <li>Project/Program Management</li>
+
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-12">
+
+                        <div class="btns-about">
+
+                            <a class="btn btn-blue" href="services.php">Read more</a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+        </article>
+
+
+
+        <article id="parallax-1">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-md-5">
+
+                        <div class="row gallery3item wow animated" style="visibility: visible;">
+
+
+
+                            <div id="mock-2" class="wow fadeInLeft animated" data-wow-delay="550ms" style="visibility: visible; animation-delay: 550ms; animation-name: fadeInLeft;"><img src="img/tb.png" alt="mockitems" width="412" height="640"></div>
+
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-7 details">
+
+                        <div class="upper-section wow flipInX" data-wow-delay="150ms" data-wow-duration="900ms">
+
+                            <h3>Explain Why it's The Best ?</h3>
+
+                            <p>The main feature of the DayWheel™ is the 24-hour clock which allows the moment to moment tracking of your life’s events. The DayWheel System enables everyone to lead an awarding and more organized life.
+
+                        </div>
+
+                        <div class="lower-section wow flipInX" data-wow-delay="500ms" data-wow-duration="900ms">
+
+                            <ul class="my-lists">
+
+                                <li>If you wish to track your goals, you need to use DayWheel™!</li>
+
+                                <li>If you want to record your thoughts, your ideas and your memories, you need to use DayWheel™!</li>
+
+                                <li>If you need to track your health, your relationships, your struggles and your triumphs, you need to use DayWheel™!</li>
+
+                                <li>If you need to manage your finances better, you need to use DayWheel™!</li>
+
+                                <li>If you need to plan your days better, you need to use DayWheel™!</li>
+
+                                <li>If you need a time management system, you need to use DayWheel™!</li>
+
+                                <li>If you want to be more efficient, you need to use DayWheel™!</li>
+
+                                <li>If you want to analyze your life to find ways to make it better, you need to use DayWheel™!</li>
+
+                            </ul>
+
+                            <a class="mybutton" href="whydaywheel.php">Read more</a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </article>
+
+        <!-- /**************************** END SERVICES Section \*****************************  -->
+
+
+
+        <!-- /**************************** TEAM Section \*****************************  -->
+
+
+
+        <article id="team" class="Section">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="title wow fadeInDown" data-wow-delay="0">OUR <strong>EXECUTIVE TEAM</strong></div>
+
+                    <p class="wow fadeInDown paragraph" data-wow-delay="200ms">Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam.</p>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="team-1 wow fadeInLeft" data-wow-duration="700ms" data-wow-delay="0">
+
+                        <div class="col-sm-6 member-1">
+
+                            <img src="images/pictures/michael-fleming.jpg" alt="team-1" width="640" height="327" style="max-height:327px;"> </div>
+
+                        <div class="col-sm-6 team-wrapper">
+
+                            <div class="team-info text-center">
+
+                                <h4>Michael Fleming</h4>
+
+                                <p>C.E.O. & Founder, DayWheel, LLC.<br> C.E.O. & Founder, King Streets Management Group (KSMG)<br> Michael.fleming@kingstreets.com <a href="tel:(678) 508-6283">(678) 508-6283</a></p>
+
+                                <div class="line-break"></div>
+
+                                <nav>
+
+                                    <ul class="text-center">
+
+                                        <li><a href="#"><i class="icon-twitter"></i></a></li>
+
+                                        <li><a href="#"><i class="icon-facebook"></i></a></li>
+
+                                        <li><a href="#"><i class="icon-vimeo"></i></a></li>
+
+                                        <li><a href="#"><i class="icon-tumblr"></i></a></li>
+
+                                        <li><a href="#"><i class="icon-dribbble"></i></a></li>
+
+                                    </ul>
+
+                                </nav>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="row">
+
+                    <div class="team-2 fadeInRight wow" data-wow-duration="700ms" data-wow-delay="200ms">
+
+                        <div class="col-sm-3 member-2">
+
+                            <img src="images/pictures/dionne-longworth.jpg" alt="team-2" width="320" height="327"> </div>
+
+                        <div class="col-sm-3 team-wrapper">
+
+                            <div class="team-info text-center">
+
+                                <h4>Dionne Longworth</h4>
+
+                                <p>C.E.O. & Founder, ANSUN Management, LLC.<br> Executive Vice President, King Streets Management Group (KSMG)<br> Dionne.longworth@kingstreets.com <a href="tel:(678) 508-6475">(678) 508-6475</a></p>
+
+                                <div class="line-break"></div>
+
+                                <nav>
+
+                                    <ul class="text-center">
+
+                                        <li><a href="#"><i class="icon-twitter"></i></a></li>
+
+                                        <li><a href="#"><i class="icon-facebook"></i></a></li>
+
+                                        <li><a href="#"><i class="icon-vimeo"></i></a></li>
+
+                                        <li><a href="#"><i class="icon-tumblr"></i></a></li>
+
+                                        <li><a href="#"><i class="icon-dribbble"></i></a></li>
+
+                                    </ul>
+
+                                </nav>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-3 member-2">
+
+                            <img src="images/pictures/lester-wright.jpg" alt="team-2" width="320" height="327"> </div>
+
+                        <div class="col-sm-3 team-wrapper">
+
+                            <div class="team-info text-center">
+
+                                <h4>Lester Wright</h4>
+
+                                <p>C.E.O. & Founder, The Lester Wright Group, LLC.<br> Executive Sales Director, King Streets Management Group (KSMG)<br> Lester.wright@kingstreets.com <a href="tel:(770) 560-7858">(770) 560-7858</a></p>
+
+                                <div class="line-break"></div>
+
+                                <nav>
+
+                                    <ul class="text-center">
+
+                                        <li><a href="#"><i class="icon-twitter"></i></a></li>
+
+                                        <li><a href="#"><i class="icon-facebook"></i></a></li>
+
+                                        <li><a href="#"><i class="icon-vimeo"></i></a></li>
+
+                                        <li><a href="#"><i class="icon-tumblr"></i></a></li>
+
+                                        <li><a href="#"><i class="icon-dribbble"></i></a></li>
+
+                                    </ul>
+
+                                </nav>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="team-2 fadeInRight wow" data-wow-duration="700ms" data-wow-delay="200ms">
+
+                        <div class="col-sm-3 member-2">
+
+                            <a href="shawn.php"><img src="images/pictures/shawn-d-lovings.jpg" alt="Shawn D.Lovings" width="320" height="327"></a> </div>
+
+                        <div class="col-sm-3 team-wrapper">
+
+                            <div class="team-info text-center" style="background-color: #efeded;">
+
+                                <a href="shawn.php">
+                                    <h4>Shawn D. Lovings</h4>
+                                </a>
+
+                                <p> C.E.O. & of Core Consulting and Marketing Group (CCMG)<br> Marketing and Advertising Director for KingStreets<br> shawn@kingstreets.com <a href="tel:(678) 508-6283">(678) 508-6283</a></p>
+
+                                <div class="line-break"></div>
+
+                                <nav>
+
+                                    <ul class="text-center">
+
+                                        <li><a href="#"><i class="icon-twitter"></i></a></li>
+
+                                        <li><a href="#"><i class="icon-facebook"></i></a></li>
+
+                                        <li><a href="#"><i class="icon-vimeo"></i></a></li>
+
+                                        <li><a href="#"><i class="icon-tumblr"></i></a></li>
+
+                                        <li><a href="#"><i class="icon-dribbble"></i></a></li>
+
+                                    </ul>
+
+                                </nav>
+
+                            </div>
+
+                        </div>
+
+                        <!-- <div class="col-sm-3 member-2">
+
+                            <img src="img/member-3.jpg" alt="team-2" width="320" height="327"> </div>
+
+                        <div class="col-sm-3 team-wrapper">
+
+                            <div class="team-info text-center" style="background-color: #efeded;">
+
+                                <h4>Lester Wright</h4>
+
+                                <p>C.E.O. & Founder, The Lester Wright Group, LLC.<br>
+
+                                    Executive Sales Director, King Streets Management Group (KSMG)<br>
+
+                                    Lester.wright@kingstreets.com <a href="tel:(770) 560-7858">(770) 560-7858</a></p>
+
+                                <div class="line-break"></div>
+
+                                <nav>
+
+                                    <ul class="text-center">
+
+                                        <li><a href="#"><i class="icon-twitter"></i></a></li>
+
+                                        <li><a href="#"><i class="icon-facebook"></i></a></li>
+
+                                        <li><a href="#"><i class="icon-vimeo"></i></a></li>
+
+                                        <li><a href="#"><i class="icon-tumblr"></i></a></li>
+
+                                        <li><a href="#"><i class="icon-dribbble"></i></a></li>
+
+                                    </ul>
+
+                                </nav>
+
+                            </div>
+
+                        </div>-->
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </article>
+
+        <!-- /**************************** end Team Section \*****************************  -->
+
+
+
+        <!-- /**************************** countdown Section \*****************************  -->
+
+
+
+        <article id="countdown">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-sm-3 col-xs-12 wow bounceIn" data-wow-duration="800ms" data-wow-delay="0">
+
+                        <div class="count-group">
+
+                            <span><i class="icon-orbit"></i></span>
+
+                            <div class="block-count">
+
+                                <h3>Fast Performce</h3>
+
+                                <p class="count-number num timer" data-to="350.625" data-speed="1500"></p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-3 col-xs-12 wow bounceIn" data-wow-duration="800ms" data-wow-delay="200ms">
+
+                        <div class="count-group">
+
+                            <span><i class="fa fa-graduation-cap"></i></span>
+
+                            <div class="block-count">
+
+                                <h3>Trainees</h3>
+
+                                <p class="count-number num timer" data-to="400" data-speed="1500"></p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-3 col-xs-12 wow bounceIn" data-wow-duration="800ms" data-wow-delay="400ms">
+
+                        <div class="count-group">
+
+                            <span><i class="fa fa-android"></i></span>
+
+                            <div class="block-count">
+
+                                <h3>Android users</h3>
+
+                                <p class="count-number num timer" data-to="128.260" data-speed="1500">200</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-3 col-xs-12 wow bounceIn" data-wow-duration="800ms" data-wow-delay="600ms">
+
+                        <div class="count-group">
+
+                            <span><i class="icon-heart"></i></span>
+
+                            <div class="block-count">
+
+                                <h3>Happy Users</h3>
+
+                                <p class="count-number num timer" data-to="2500" data-speed="1500"></p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- /**************************** end countdown Section \*****************************  -->
+
+        <!-- /**************************** PROMOTION Section \*****************************  -->
+
+
+
+        <article id="features" class="Section">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="title wow fadeInDown" data-wow-delay="0">Amazing <strong>Features</strong></div>
+
+                    <p class="wow fadeInDown paragraph" data-wow-delay="200ms">Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam.</p>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-4 col-sm-4">
+
+                        <div class="Fservices wow fadeInLeft" data-wow-duration="800ms" data-wow-delay="150ms">
+
+                            <i class="icon-medal"></i>
+
+                            <h3>Daywheel</h3>
+
+                            <p>Laceaque quiae sitiorem rest non restibusaes.</p>
+
+                        </div>
+
+
+
+                        <div class="Fservices Fright wow fadeInLeft" data-wow-duration="800ms" data-wow-delay="300ms">
+
+                            <i class="icon-gallery"></i>
+
+                            <h3>Schedules</h3>
+
+                            <p>Laceaque quiae sitiorem rest non restibusaes.</p>
+
+                        </div>
+
+
+
+                        <div class="Fservices wow fadeInLeft" data-wow-duration="800ms" data-wow-delay="500ms">
+
+                            <i class="icon-grid"></i>
+
+                            <h3>Week in Review</h3>
+
+                            <p>Laceaque quiae sitiorem rest non restibusaes.</p>
+
+                        </div>
+
+
+
+                        <div class="Fservices wow fadeInLeft Fright" data-wow-duration="800ms" data-wow-delay="600ms">
+
+                            <i class="icon-ring"></i>
+
+                            <h3>Calendar</h3>
+
+                            <p>Laceaque quiae sitiorem rest non restibusaes.</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4 col-sm-4 mock-4 wow fadeInDown" data-wow-duration="800ms" data-wow-delay="0">
+
+                        <img src="img/tb-2.png" alt="background"> </div>
+
+                    <div class="col-md-4 col-sm-4">
+
+                        <div class="Fservices fadeInRight wow" data-wow-duration="800ms" data-wow-delay="150ms">
+
+                            <i class="icon-pie"></i>
+
+                            <h3>Events</h3>
+
+                            <p>Laceaque quiae sitiorem rest non restibusaes.</p>
+
+                        </div>
+
+
+
+                        <div class="Fservices fadeInRight wow Fright" data-wow-duration="800ms" data-wow-delay="300ms">
+
+                            <i class="icon-setting"></i>
+
+                            <h3>Easy to Use</h3>
+
+                            <p>Laceaque quiae sitiorem rest non restibusaes.</p>
+
+                        </div>
+
+
+
+                        <div class="Fservices fadeInRight wow" data-wow-duration="800ms" data-wow-delay="450ms">
+
+                            <i class="icon-mobile"></i>
+
+                            <h3>Mobile Friendly</h3>
+
+                            <p>Laceaque quiae sitiorem rest non restibusaes.</p>
+
+                        </div>
+
+
+
+                        <div class="Fservices fadeInRight wow Fright" data-wow-duration="800ms" data-wow-delay="600ms">
+
+                            <i class="icon-Play"></i>
+
+                            <h3>What makes the Game</h3>
+
+                            <p>Laceaque quiae sitiorem rest non restibusaes.</p>
+
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </article>
+
+        <!-- /**************************** END Feature Section \*****************************  -->
+
+
+
+        <!-- /**************************** TESTOMNIAL Section \*****************************  -->
+
+        <article id="testomnials">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="title wow fadeInDown" data-wow-delay="0">Our <strong style="color:#F59520;">Testimonials</strong></div>
+
+                    <div id="owl-demo-3">
+
+                        <div class="item">
+
+                            <div class="coustomer-feed">
+
+                                <h3>Lisa<small>liam</small></h3>
+
+                                <p><small>”</small>My New Years resolution for 2010 will be the same as it was for 2009,to lose weight! I am so thankful to have found DayWheel.It allows me to keep up with everything I eat and every workout.
+
+                                    <small>”</small></p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="item">
+
+                            <div class="coustomer-feed">
+
+                                <h3>John<small>Doe</small></h3>
+
+                                <p><small>”</small><strong>Our DayWheel</strong> is recording our legacy,our message,and our hopes for our children and grandchildren. <small>”</small></p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="item">
+
+                            <div class="coustomer-feed">
+
+                                <h3>Max<small>Well</small></h3>
+
+                                <p><small>”</small><strong>My DayWheel</strong> helps me manage my career,my home,my relationship,my projects and my finances.<small>”</small></p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="item">
+
+                            <div class="coustomer-feed">
+
+                                <h3>Robert<small>David</small></h3>
+
+                                <p><small>”</small>I personally use it and recommend it to my patients and <strong>they love it!</strong><small>”</small></p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="item">
+
+                            <div class="coustomer-feed">
+
+                                <h3>Andrew<small>Smith</small></h3>
+
+                                <p><strong><small>”</small>This is my online journal and diary.</strong>I got to share my thoughts,feelings and experiences with my friends and family.<small>”</small></p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </article>
+
+        <!-- /**************************** END TESTOMNIAL Section \*****************************  -->
+
+        <!-- /****************************  Client Section \*****************************  -->
+
+        <article id="logos">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="title wow fadeInDown" data-wow-delay="0">Our <strong>Clients</strong></div>
+
+                    <div id="owl-demo-2">
+
+                        <div class="item wow fadeInUp" data-wow-delay="0"><img src="img/logos/logo-1.png" alt="logos" width="134" height="35"></div>
+                        <div class="item wow fadeInUp" data-wow-delay="200ms"><img src="img/logos/logo-2.png" alt="logos" width="134" height="35"></div>
+                        <div class="item wow fadeInUp" data-wow-delay="400ms"><img src="img/logos/logo-3.png" alt="logos" width="134" height="35"></div>
+                        <div class="item wow fadeInUp" data-wow-delay="600ms"><img src="img/logos/logo-4.png" alt="logos" width="134" height="35"></div>
+                        <div class="item wow fadeInUp" data-wow-delay="800ms"><img src="img/logos/logo-5.png" alt="logos" width="134" height="35"></div>
+                        <div class="item wow fadeInUp" data-wow-delay="0"><img src="img/logos/logo-6.png" alt="logos" width="122" height="84"></div>
+                        <div class="item wow fadeInUp" data-wow-delay="0"><img src="img/logos/logo-7.png" alt="logos" width="162" height="90"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </article>
+
+        <!-- /****************************End  Client Section \*****************************  -->
+
+        <!-- /**************************** Join Now Section \*****************************  -->
+
+        <article id="buy">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-sm-9 col-md-9 wow fadeInLeft" data-wow-delay="0" data-wow-duration="600ms">
+
+                        <h1>How Do I Start?</h1>
+
+                        <p>
+
+                            To get started using your DayWheel, simply click on the <strong>JOIN NOW</strong> button register your details. Let your story begin!
+
+                        </p>
+
+                    </div>
+
+                    <div class="col-sm-3 col-md-3 wow fadeInRight main-form" data-wow-delay="200ms" data-wow-duration="600ms">
+                        <a href="javascript:void(0)" class="cd-signup op">Join Now</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </article>
+
+        <!-- /****************************End Join Now Section \*****************************  -->
+
+
+
+        <!-- /****************************Get in Touch Section \*****************************  -->
+
+        <article id="contact" class="Section">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="title wow fadeInDown" data-wow-delay="0">GET IN <strong>TOUCH</strong></div>
+
+                    <p class="wow fadeInDown paragraph" data-wow-delay="200ms">We would love to hear your thoughts, concerns or problems with anything so we can improve!</p>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-sm-12 col-md-12 wow flipInX" data-wow-duration="900ms" data-wow-delay="400ms">
+
+                        <form method="post" class="form-inline form-footer" role="form" id="form-footer">
+
+                            <div id="message"></div>
+
+                            <div class="form-group ">
+
+                                <div class="col-sm-4 col-md-4">
+
+                                    <input type="text" class="form-control" id="name" placeholder="Name">
+
+                                </div>
+
+                                <div class="col-sm-4 col-md-4">
+
+                                    <input type="text" class="form-control" id="email" placeholder="Email">
+
+                                </div>
+
+                                <div class="col-sm-4 col-md-4">
+
+                                    <input type="text" class="form-control " id="telephone" placeholder="Telephone">
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-12 col-sm-12">
+
+                                <textarea name="comments" cols="40" rows="10" id="comments" placeholder="Message"></textarea>
+
+                            </div>
+
+                            <div class="col-md-12 col-sm-12 text-center">
+
+                                <a href="javascript:void(0)" id="submit" value="submit" class="btn btn-blue">send it</a>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <article id="footer">
+
+            <div class="container">
+
+                <div class="row bounceIn wow" data-wow-duration="800ms" data-wow-delay="0">
+
+                    <div class="call">
+
+                        <span>(678) 508-6475</span>
+
+                    </div>
+
+                    <div class="text-center">
+
+                        <h4>get connected
+
+                            <br>
+
+                            <strong>Follow us</strong>
+
+                        </h4>
+
+                        <p>Get connected with us on social networks!</p>
+
+                    </div>
+
+                    <nav>
+
+                        <ul>
+
+                            <li><a href="https://www.facebook.com/DayWheel/" target="_blank"><i class="icon-fb-block"></i></a></li>
+
+                            <li><a href="https://twitter.com/MyDayWheel" target="_blank"><i class="icon-twitter-block"></i></a></li>
+
+                            <li><a href="https://www.instagram.com/daywheel/" target="_blank"><i class="icon-instgram-block"></i></a></li>
+
+                            <!-- <li><a href="#"><i class="icon-plus-block"></i></a></li>
+
+							<li><a href="#"><i class="icon-linkden-block"></i></a></li>
+
+							<li><a href="#"><i class="icon-be-block"></i></a></li>
+
+							<li><a href="#"><i class="icon-dribble-block"></i></a></li>
+
+							<li><a href="#"><i class="icon-dropbox-block"></i></a></li>
+
+							<li><a href="#"><i class="icon-keynote-block"></i></a></li>-->
+
+                        </ul>
+
+                    </nav>
+
+                </div>
+
+            </div>
+
+        </article>
+
+        <!-- Google Map -->
+
+        <section>
+
+            <div class="title wow fadeInDown" data-wow-delay="0">Reach <strong>Us</strong></div>
+
+            <!-- Google Map Script -->
+
+            <!-- Google Map ID -->
+
+            <div id="map"></div>
+
+        </section>
+
+        <!-- End Google Map -->
+
+
+
+        <section id="sub-footer">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="text-center">
+
+                        <p><small>©2023</small>ALL RIGHT RESERVED. My Daywheel</p>
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- /**************************** GET IN TOUCH \******************************** -->
+
+
+
+        </div>
+
+
+
+        <!-- Placed at the end of the document so the pages load faster -->
+
+        <script src="lib/js/jquery-1.10.2.min.js"></script>
+
+        <script src="lib/js/jquery.cookie.js"></script>
+
+        <script src="lib/js/easing.min.js"></script>
+
+        <script src="lib/js/modernizr.custom.js"></script>
+
+        <script src="lib/js/owl.carousel.min.js"></script>
+
+        <script src="lib/js/bootstrap.min.js"></script>
+
+        <script src="lib/js/nivo-lightbox.js"></script>
+
+        <script src="lib/js/wow.js"></script>
+
+        <script src="js/regform.js"></script>
+
+        <script src="lib/js/isotop.js"></script>
+
+        <script src="lib/js/jquery.flexslider-min.js"></script>
+
+        <script src="js/plugins.js"></script>
+
+        <script src="lib/js/jquery.liquid-slider.min.js"></script>
+
+        <script src="lib/js/jquery.touchSwipe.min.js"></script>
+
+        <script src="lib/js/masterslider.min.js"></script>
+
+        <script src="lib/js/TweenMax.js"></script>
+
+        <script src="lib/js/ScrollTo.js"></script>
+
+        <script src="lib/js/easypiechart.js"></script>
+
+        <!--	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>-->
+
+        <!--<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJXKqV9HoGD250faVnaE3zuztg4My03gs"></script>-->
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpvun9Q4_v0mvqGyrNpOizMBZkJlJEb24"></script>
+
+
+
+        <script type="text/javascript" src="lib/js/Gmap.js"></script>
+
+        <script src="lib/js/fluidvids.js"></script>
+        <script src="lib/js/jquery.fitvids.js"></script>
+
+        <script src="lib/js/moment.js"></script>
+
+        <script src="scripts/services/datasource-service.js"></script>
+
+        <script src="lib/js/toaster.js"></script>
+
+        <script src="js/custom.js"></script>
+
+        <script src="js/logout.js"></script>
+
+        <script src="scripts/viewmodel/user.js"></script>
+
+        <script src="scripts/viewmodel/forgotpassword.js"></script>
+
+
+
+        <script type="text/javascript">
+            $(function() {
+
+                // Get current path and find target link
+
+                $('#cd-main-nav a').click(function() {
+
+                    $('#cd-main-nav a').removeClass('menu-item-active');
+
+                    $(this).addClass('menu-item-active');
+
+                });
+
+
+
+                /*Function to hide the menu if not login*/
+
+                var loginStatus = localStorage.getItem('User_id');
+
+                if (loginStatus == null) {
+
+                    $('#menu-daywheel').hide();
+
+                } else {
+
+                    $('#menu-daywheel').show();
+
+                }
+
+            });
+
+            /* ==============================================
+
+             Google Maps
+
+             =============================================== */
+
+
+
+
+
+            $("#map").gmap3({
+
+                marker: {
+
+                    address: "Powder Springs Rd SW, Marietta, GA, United States",
+
+                    options: {
+                        icon: "img/marker.png"
+                    }
+                },
+
+                map: {
+
+                    options: {
+
+                        styles: [{
+
+                                stylers: [{
+                                    "saturation": -100
+                                }, {
+                                    "lightness": 0
+                                }, {
+                                    "gamma": 2
+                                }]
+                            }
+
+                        ],
+
+                        scrollwheel: false,
+
+                        //  navigationControl: false,
+
+                        //  mapTypeControl: false,
+
+                        //  scaleControl: false,
+
+                        //  draggable: false,
+
+                        disableDefaultUI: true,
+
+                        mapTypeControl: true,
+
+                        zoomControl: true,
+
+                        zoom: 14
+                    }
+
+                },
+
+                infoWindow: {
+
+                    content: '<p>Equator Business Centre /5, 36, Trichy Rd, Sulur, Tamil Nadu 641402</p>'
+
+                }
+
+            });
+
+
+
+            /* ==============================================
+
+             Master Slider
+
+             =============================================== */
+
+
+
+            var slider = new MasterSlider();
+
+            "use strict";
+
+            slider.setup('masterslider', {
+
+
+
+                width: 1190,
+
+                height: 760,
+
+                // space:100,
+
+                space: 0,
+
+                start: 1,
+
+                grabCursor: true,
+
+                swipe: true,
+
+                mouse: false,
+
+                fullwidth: true,
+
+                wheel: false,
+
+                layout: "fullscreen",
+
+                autoplay: true,
+
+                instantStartLayers: false,
+
+                loop: true,
+
+                shuffle: false,
+
+                preload: 2,
+
+                heightLimit: true,
+
+                autoHeight: false,
+
+                smoothHeight: true,
+
+                centerControls: false,
+
+                // layersMode: "center",
+
+                speed: 30,
+
+                parallaxMode: 'swipe',
+
+                dir: "h",
+
+                // start:1,
+
+                // loop:true,
+
+                // grabCursor:false,
+
+                view: 'flow'
+
+            });
+
+            slider.control('arrows');
+
+            slider.control('bullets', {
+                autohide: true
+            });
+        </script>
+
+
+
+</body>
+
+</html>

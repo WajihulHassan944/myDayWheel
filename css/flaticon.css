@@ -1,0 +1,173 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 15/06/2016 09:31
+  	*/
+
+	@font-face {
+	    font-family: "Flaticon";
+	    src: url("fonts/Flaticon.eot");
+	    src: url("fonts/Flaticon.eot?#iefix") format("embedded-opentype"), url("fonts/Flaticon.woff") format("woff"), url("fonts/Flaticon.ttf") format("truetype"), url("fonts/Flaticon.svg#Flaticon") format("svg");
+	    font-weight: normal;
+	    font-style: normal;
+	}
+
+	@media screen and (-webkit-min-device-pixel-ratio:0) {
+	    @font-face {
+	        font-family: "Flaticon";
+	        src: url("fonts/Flaticon.svg#Flaticon") format("svg");
+	    }
+	}
+
+	[class^="flaticon-"]:before,
+	[class*=" flaticon-"]:before,
+	[class^="flaticon-"]:after,
+	[class*=" flaticon-"]:after {
+	    font-family: Flaticon;
+	    font-size: 56px;
+	    font-style: normal;
+	    margin-left: 20px;
+	}
+
+	.flaticon-advertising-agency-account-executive:before {
+	    content: "\f100";
+	}
+
+	.flaticon-application-form:before {
+	    content: "\f101";
+	}
+
+	.flaticon-books:before {
+	    content: "\f102";
+	}
+
+	.flaticon-buildings:before {
+	    content: "\f103";
+	}
+
+	.flaticon-business:before {
+	    content: "\f104";
+	}
+
+	.flaticon-checked:before {
+	    content: "\f105";
+	}
+
+	.flaticon-close:before {
+	    content: "\f106";
+	}
+
+	.flaticon-coding:before {
+	    content: "\f107";
+	}
+
+	.flaticon-conference-hall:before {
+	    content: "\f108";
+	}
+
+	.flaticon-consultation:before {
+	    content: "\f109";
+	}
+
+	.flaticon-cubes-in-stack-with-shadow:before {
+	    content: "\f10a";
+	}
+
+	.flaticon-draw:before {
+	    content: "\f10b";
+	}
+
+	.flaticon-favorite:before {
+	    content: "\f10c";
+	}
+
+	.flaticon-graph-on-screen:before {
+	    content: "\f10d";
+	}
+
+	.flaticon-interface:before {
+	    content: "\f10e";
+	}
+
+	.flaticon-jug-with-volumetric-measure:before {
+	    content: "\f10f";
+	}
+
+	.flaticon-logic-board-games:before {
+	    content: "\f110";
+	}
+
+	.flaticon-magnifying-glass:before {
+	    content: "\f111";
+	}
+
+	.flaticon-management:before {
+	    content: "\f112";
+	}
+
+	.flaticon-multimedia:before {
+	    content: "\f113";
+	}
+
+	.flaticon-office-building:before {
+	    content: "\f114";
+	}
+
+	.flaticon-people:before {
+	    content: "\f115";
+	}
+
+	.flaticon-people-1:before {
+	    content: "\f116";
+	}
+
+	.flaticon-person-explaining-strategy-on-a-board-with-a-sketch:before {
+	    content: "\f117";
+	}
+
+	.flaticon-presentation:before {
+	    content: "\f118";
+	}
+
+	.flaticon-professional-profile-with-image:before {
+	    content: "\f119";
+	}
+
+	.flaticon-professor-consultation:before {
+	    content: "\f11a";
+	}
+
+	.flaticon-puzzle:before {
+	    content: "\f11b";
+	}
+
+	.flaticon-search:before {
+	    content: "\f11c";
+	}
+
+	.flaticon-seo-training:before {
+	    content: "\f11d";
+	}
+
+	.flaticon-shopping-cart:before {
+	    content: "\f11e";
+	}
+
+	.flaticon-stock-data-analysis:before {
+	    content: "\f11f";
+	}
+
+	.flaticon-tactics:before {
+	    content: "\f120";
+	}
+
+	.flaticon-teacher-question-to-the-class:before {
+	    content: "\f121";
+	}
+
+	.flaticon-telemarketer:before {
+	    content: "\f122";
+	}
+
+	.flaticon-terminal-windows:before {
+	    content: "\f123";
+	}
